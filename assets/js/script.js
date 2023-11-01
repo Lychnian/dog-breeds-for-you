@@ -16,3 +16,15 @@ function getBreed() {
 }
 
 getBreed();
+
+function getfunfact() {
+    var url = "https://dogapi.dog/api/v2/facts?limit=1"
+    fetch(url)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+  });
+}
+getfunfact();
