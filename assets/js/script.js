@@ -1,4 +1,3 @@
-
 var breed = 'golden retriever';
 function getBreed() {
     $.ajax({
@@ -14,5 +13,6 @@ function getBreed() {
         }
     });
 }
+
 
 getBreed();
