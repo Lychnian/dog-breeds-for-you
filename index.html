@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Breeds</title>
+    <link rel="stylesheet" type="text/css" href="style7.css" />
+    <title>Dog Breeds For You</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
 </head>
+
 <body>
-    <p>lmao</p>
+    <!-- Main content container -->
+    <div align="center">
+
+        <!-- Main title -->
+        <h1>Dog Breeds For You</h1>
+
+        <!-- Input field for the user to enter the dog breed -->
+        <input type="text" id="breedInput" placeholder="Enter Dog Breed">
+
+        <!-- Button to initiate the search -->
+        <button id="searchButton">Search</button>
+    </div>
+
+    <!-- Container for displaying dog image and stats -->
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+
+        <!-- Box for displaying dog image -->
+        <div id="dogImageBox" style="margin-right: 20px;">
+             <!-- Title for the Dog Image box -->
+            <h3>Dog Image</h3>
+            <!-- Dog Image will be displayed here -->
+        </div>
+
+        <!-- Box for displaying dog stats -->
+        <div id="dogStatsBox">
+              <!-- Title for the Dog Stats box -->
+            <h3>Dog Stats</h3>
+            <!-- Dog Stats will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Container for displaying random dog facts -->
+    <div style="margin-top: 20px;">
+        <h2>Random Dog Facts</h2>
+
+        <!-- Container for random dog facts -->
+        <div id="randomDogFacts">
+            <!-- Random Dog Facts will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Container for buttons to save and view favorites -->
+    <div style="margin-top: 20px; display: flex; justify-content: center;">
+
+        <!-- Button to save dog image and stats -->
+        <button id="saveButton">Save</button>
+
+        <!-- Button to view saved favorites -->
+        <button id="favoritesButton">Saved Favorites</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    <p><pre>Made by the 🐶 Dog Gang</pre></p>   
+
+    </footer>
+        <script src="script.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- JavaScript/jQuery code for API calls and user interactions -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
