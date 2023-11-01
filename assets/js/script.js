@@ -25,6 +25,14 @@ function getfunfact() {
   })
   .then(function (data) {
     console.log(data);
+    //create
+    var funFact = document.querySelector('#randomDogFacts')
+    var pel = document.createElement('p')
+    var fact = data.data[0].attributes.body
+    //text/attr
+    pel.textContent = fact;
+    //append
+    funFact.appendChild(pel)
   });
 }
 getfunfact();
