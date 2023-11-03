@@ -45,17 +45,20 @@
             <h3>Dog Stats</h3>
             <div class="card">
                 <!-- Title for the Dog Stats box -->
-                <h4 class="card-header-title">Dog Name</h4>
+                <h4 class="card-header-title" id="name">Dog Name</h4>
                 <!-- Dog Stats will be displayed here -->
                 <ul class="card-content">
-                    <li class="content">
-                        Friendliness: --
+                    <li class="content" id="friendly">
+                        Friendliness: 
                     </li>
-                    <li class="content">
-                        Kid Friendly: --
+                    <li class="content" id="barking">
+                        Barking:
                     </li>
-                    <li class="content">
-                        Playful: --
+                    <li class="content" id="kids">
+                        Kid Friendly: 
+                    </li>
+                    <li class="content" id="playful">
+                        Playful: 
                     </li>
                 </ul>
             </div>
@@ -66,9 +69,13 @@
     <div class="columns">
         <!-- Container for random dog facts -->
         <div class="column">
-            <h2>Random Dog Facts</h2>
-            <!-- Random Dog Facts will be displayed here -->
-            <p id="randomDogFacts"></p>        
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="content">Random Dog Facts</h2>
+                    <!-- Random Dog Facts will be displayed here -->
+                    <p class="content" id="randomDogFacts">Evidence from fossils suggests that five types of dog had evolved by the Bronze Age, around 4500BC. These were mastiffs, wolf-type dogs, dogs similar to greyhounds, pointing dogs and herding dogs. Bow wow!</p>
+                </div>
+            </div>
         </div>
         <!-- Container for buttons to save and view favorites -->
         <div class="column">
