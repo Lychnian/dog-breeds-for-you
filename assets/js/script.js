@@ -15,6 +15,7 @@ function getBreed() {
     });
 }
 function handleStats(result) {
+  document.getElementById("name").textContent = result[0].name;
   document.getElementById("friendly").textContent += result[0].good_with_children;
   document.getElementById("barking").textContent += result[0].barking;
   document.getElementById("kids").textContent += result[0].good_with_children;
