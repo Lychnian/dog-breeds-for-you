@@ -14,55 +14,71 @@
 </head>
 
 <body>
-    <!-- Main content container -->
-    <div align="center">
-
+    <header>
         <!-- Main title -->
         <h1>Dog Breeds For You</h1>
+    </header>
 
-        <!-- Input field for the user to enter the dog breed -->
-        <input type="text" id="breedInput" placeholder="Enter Dog Breed">
-
-        <!-- Button to initiate the search -->
-        <button id="searchButton">Search</button>
+    <!-- Main content container -->
+    <div class="columns is-multiline is-centered">
+        <div class="column is-narrow">
+            <!-- Input field for the user to enter the dog breed -->
+            <input class="has-background-info" type="text" id="breedInput" placeholder="Enter Dog Breed">
+        </div>
+        <div class="column is-narrow">
+            <!-- Button to initiate the search -->
+            <button class="has-background-info" id="searchButton">Search</button>
+        </div>
     </div>
 
     <!-- Container for displaying dog image and stats -->
-    <div style="display: flex; justify-content: center; margin-top: 20px;">
-
+    <div class="columns is-centered">
         <!-- Box for displaying dog image -->
-        <div id="dogImageBox" style="margin-right: 20px;">
-             <!-- Title for the Dog Image box -->
+        <div class="column is-half is-flex is-flex-direction-column is-align-items-center is-justify-content-center" id="dogImageBox">
+            <!-- Title for the Dog Image box -->
             <h3>Dog Image</h3>
             <!-- Dog Image will be displayed here -->
+            <img src="https://media.discordapp.net/attachments/1166192628619038831/1169778620324134952/images.png?ex=6556a43c&is=65442f3c&hm=fe5025c98f6fbf4906ac5a37ca5c0244ffbf8a578c7f91865e9ca624a40dbc74&=&width=997&height=997" alt="doggy">
         </div>
-
         <!-- Box for displaying dog stats -->
-        <div id="dogStatsBox">
-              <!-- Title for the Dog Stats box -->
+        <div class="column" id="dogStatsBox">
             <h3>Dog Stats</h3>
-            <!-- Dog Stats will be displayed here -->
+            <div class="card">
+                <!-- Title for the Dog Stats box -->
+                <h4 class="card-header-title">Dog Name</h4>
+                <!-- Dog Stats will be displayed here -->
+                <ul class="card-content">
+                    <li class="content">
+                        Friendliness: --
+                    </li>
+                    <li class="content">
+                        Kid Friendly: --
+                    </li>
+                    <li class="content">
+                        Playful: --
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <!-- Container for displaying random dog facts -->
-    <div style="margin-top: 20px;">
-        <h2>Random Dog Facts</h2>
-
+    <div class="columns">
         <!-- Container for random dog facts -->
-        <div id="randomDogFacts">
+        <div class="column">
+            <h2>Random Dog Facts</h2>
             <!-- Random Dog Facts will be displayed here -->
+            <p id="randomDogFacts"></p>        
         </div>
-    </div>
-
-    <!-- Container for buttons to save and view favorites -->
-    <div style="margin-top: 20px; display: flex; justify-content: center;">
-
-        <!-- Button to save dog image and stats -->
-        <button id="saveButton">Save</button>
-
-        <!-- Button to view saved favorites -->
-        <button id="favoritesButton">Saved Favorites</button>
+        <!-- Container for buttons to save and view favorites -->
+        <div class="column">
+            <div class="columns">
+                <!-- Button to save dog image and stats -->
+                <button class="column" id="saveButton">Save</button>
+                <!-- Button to view saved favorites -->
+                <button class="column" id="favoritesButton">Saved Favorites</button>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
