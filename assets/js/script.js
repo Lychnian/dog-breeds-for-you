@@ -20,6 +20,14 @@ function handleStats(result) {
   document.getElementById("barking").textContent += result[0].barking;
   document.getElementById("kids").textContent += result[0].good_with_children;
   document.getElementById("playful").textContent += result[0].playfulness;
+  
+  var imgbox = $("#dogImageBox");
+  var imgel =$("<img>");
+  var dogimg = result[0].image_link;
+
+  imgel.attr("src", dogimg);
+
+  imgbox.append(imgel);
 }
 
 
@@ -45,3 +53,4 @@ function getfunfact() {
   });
 }
 getfunfact();
+
