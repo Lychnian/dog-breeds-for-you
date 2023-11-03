@@ -1,6 +1,6 @@
 var breed;
 var searcherButton = document.getElementById("searchButton");
-var counter = 0;
+var original = $("#dogImageBox").html();
 function getBreed(dogBreed) {
     $.ajax({
         method: 'GET',
@@ -18,9 +18,6 @@ function getBreed(dogBreed) {
 }
 function handleStats(result) {
   
-  if (counter !== 0) {
-    imgbox.innerHTML = "";
-  }
   document.getElementById("name").textContent = result[0].name;
   document.getElementById("friendly").textContent = "Friendliness: " + result[0].good_with_children;
   document.getElementById("barking").textContent = "Barking: " + result[0].barking;
@@ -30,11 +27,9 @@ function handleStats(result) {
   var imgbox = $("#dogImageBox");
   var imgel =$("<img>");
   var dogimg = result[0].image_link;
-
   imgel.attr("src", dogimg);
-
+  $('#dogImageBox').html(original);
   imgbox.append(imgel);
-  counter++;
 }
 
 
