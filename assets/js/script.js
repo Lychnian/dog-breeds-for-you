@@ -8,6 +8,7 @@ function getBreed() {
         contentType: 'application/json',
         success: function(result) {
             console.log(result);
+            handlestats(result);
         },
         error: function ajaxError(jqXHR) {
             console.error('Error: ', jqXHR.responseText);
@@ -36,3 +37,14 @@ function getfunfact() {
   });
 }
 getfunfact();
+
+function handlestats(result) {
+  console.log(result);
+  var imgbox = $("#dogImageBox");
+  var imgel =$("<img>");
+  var dogimg = result[0].image_link;
+
+  imgel.attr("src", dogimg);
+
+  imgbox.append(imgel);
+}
