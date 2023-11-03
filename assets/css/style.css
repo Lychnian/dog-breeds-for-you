@@ -4,3 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.saved {
+    margin: 10px 40px;
+}
+
+.savedDogBtn {
+    width: 100%;
+}

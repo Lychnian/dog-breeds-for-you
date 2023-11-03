@@ -80,19 +80,32 @@
         </div>
         <!-- Container for buttons to save and view favorites -->
         <div class="column">
-            <div class="columns">
+            <div class="columns saved">
                 <!-- Button to save dog image and stats -->
-                <button class="column" id="saveButton">Save</button>
+                <button class="column is-one-quarter is-flex is-flex-direction-column is-align-items-center is-justify-content-center" id="saveButton">Save</button>
                 <!-- Button to view saved favorites -->
-                <button class="column" id="favoritesButton">Saved Favorites</button>
+                <h4 class="column is-half is-flex is-flex-direction-column is-align-items-center is-justify-content-center">Saved Favorites</h4>
+                <div id="favoritesButton">
+                    <ul>
+                        <button class="savedDogBtn">
+                            Dog One
+                        </button>
+                        <button class="savedDogBtn">
+                            Dog Two
+                        </button>
+                        <button class="savedDogBtn">
+                            Dog Three
+                        </button>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-    <p><pre>Made by the 🐶 Dog Gang</pre></p>   
-
+        <p><pre>Made by the 🐶 Dog Gang</pre></p>   
     </footer>
   
     <!-- jQuery library -->
