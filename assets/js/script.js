@@ -1,4 +1,3 @@
-
 var breed = 'golden retriever';
 function getBreed() {
     $.ajax({
@@ -8,12 +7,22 @@ function getBreed() {
         contentType: 'application/json',
         success: function(result) {
             console.log(result);
+            handleStats(result);
         },
         error: function ajaxError(jqXHR) {
             console.error('Error: ', jqXHR.responseText);
         }
     });
 }
+function handleStats(result) {
+  document.getElementById("name").textContent = result[0].name;
+  document.getElementById("friendly").textContent += result[0].good_with_children;
+  document.getElementById("barking").textContent += result[0].barking;
+  document.getElementById("kids").textContent += result[0].good_with_children;
+  document.getElementById("playful").textContent += result[0].playfulness;
+}
+
+
 
 getBreed();
 
