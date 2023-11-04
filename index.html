@@ -17,18 +17,18 @@
 <body>
     <header>
         <!-- Main title -->
-        <h1>Dog Breeds For You</h1>
+        <h1 class="has-text-centered">Dog Breeds For You</h1>
     </header>
 
     <!-- Main content container -->
     <div class="columns is-multiline is-centered">
         <div class="column is-narrow">
             <!-- Input field for the user to enter the dog breed -->
-            <input class="has-background-info" type="text" id="breedInput" placeholder="Enter Dog Breed">
+            <input type="text" id="breedInput" placeholder="Enter Dog Breed">
         </div>
         <div class="column is-narrow">
             <!-- Button to initiate the search -->
-            <button class="has-background-info" id="searchButton">Search</button>
+            <button id="searchButton">Search</button>
         </div>
     </div>
 
@@ -47,9 +47,9 @@
             <div class="card">
                 <!-- Title for the Dog Stats box -->
 
-                <h4 class="card-header-title" id="name">Dog Name</h4>
-                    <h4>Values: Lowest = 1   Highest = 5</h4>
-
+                <h4 class="card-header-title is-centered" id="name">Dog Name</h4>
+                <p class="has-text-centered">Values: Lowest = 1   Highest = 5</p>
+        
                 <!-- Dog Stats will be displayed here -->
                 <ul class="card-content">
                     <li class="content" id="friendly">
@@ -83,19 +83,35 @@
         </div>
         <!-- Container for buttons to save and view favorites -->
         <div class="column">
-            <div class="columns">
+            <div class="columns saved">
                 <!-- Button to save dog image and stats -->
-                <button class="column" id="saveButton">Save</button>
+                <div>
+                    <button class="column is-one-half" id="saveButton">Save</button>
+                </div>
                 <!-- Button to view saved favorites -->
-                <button class="column" id="favoritesButton">Saved Favorites</button>
+                <div class="is-flex-direction-row-reverse has-text-centered">
+                    <h4 class="column">Saved Favorites</h4>
+                    <div id="favoritesButton">
+                        <ul>
+                            <button class="savedDogBtn">
+                                Dog One
+                            </button>
+                            <button class="savedDogBtn">
+                                Dog Two
+                            </button>
+                            <button class="savedDogBtn">
+                                Dog Three
+                            </button>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-    <p><pre>Made by the 🐶 Dog Gang</pre></p>   
-
+        <p><pre>Made by the 🐶 Dog Gang</pre></p>   
     </footer>
   
     <!-- jQuery library -->
