@@ -1,14 +1,79 @@
-/* Universal Selectors */
-* {
-    margin: 10px;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Condensed:wght@400;700&display=swap');
+
+/*
+  Variables that set some consistent colors
+*/
+:root {
+    --navy: #190482;
+    --dark: #7752FE;
+    --light: #8E8FFA;
+    --blue: #C2D9FF;
 }
 
-.saved {
-    margin: 10px 40px;
+/*
+  Element selectors
+*/
+body {
+    background-color: var(--blue);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.savedDogBtn {
+footer, header {
+    background-color: var(--navy);
+    color: white;
+    padding: 20px;
+}
+
+header {
+    font-size: 200%;
+    font-family: "Agbalumo";
+    padding: 20px;
+}
+
+/*
+  Class selectors
+*/
+.button {
+    background-color: var(--light);
+    color: white;
+}
+
+/*
+  Fancy hover and focus effects for all buttons on the page
+*/
+
+.button:focus {
+    background-color: var(--dark);
+    color: white;
+}
+
+.button:hover {
+    background-color: var(--dark);
+    color: white;
+}
+
+/*
+  ID selectors
+*/
+
+/*
+  Sets width to 100% so it fills up the card, but only for the "favorites" card
+*/
+#favButtons .button {
     width: 100%;
+}
+
+/*
+  Fancy hover effect specifically for the save button
+*/
+#saveButton {
+    background-color: white;
+    color: var(--light);
+    border: solid;
+}
+
+#saveButton:hover {
+    background-color: var(--light);
+    color: white;
+    border: solid var(--light);
 }
