@@ -4,7 +4,7 @@ var original = $("#dogImageBox").html();
 function getBreed(dogBreed) {
     $.ajax({
         method: 'GET',
-        url: 'https://api.api-ninjas.com/v1/dogs?name=' + dogBreed,
+        url: 'https://api.api-ninjas.com/v1/dogs?namdoe=' + dogBreed,
         headers: { 'X-Api-Key': 'iqP+bCQF+F1cPnw9y5EfDQ==Xfnu1gSs4QvrJu79'},
         contentType: 'application/json',
         success: function(result) {
