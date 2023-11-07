@@ -77,3 +77,11 @@ header {
     color: white;
     border: solid var(--light);
 }
+
+#rel {
+  position: relative;
+}
+
+#modalButton {
+  position: absolute;
+}

@@ -3,6 +3,8 @@ var breeds = [];
 var searcherButton = document.getElementById("searchButton");
 var saveButton =document.getElementById("saveButton")
 var favButtons = $("#favButtons")
+var errorModal = $(".modal")
+var modalButton = $("#modalButton")
 var original = $("#dogImageBox").html();
 
 if(localStorage.getItem("breeds")){ 
@@ -22,11 +24,15 @@ function getBreed(dogBreed) {
         },
         error: function ajaxError(jqXHR) {
             console.error('Error: ', jqXHR.responseText);
+            errorModal.attr("class", "is-active")
         }
     });
 }
 
 function handleStats(result) {
+  if(result.length < 1){
+    errorModal.attr("class", "is-active")
+  }
   
   document.getElementById("name").textContent = result[0].name;
   document.getElementById("friendly").textContent = "Friendliness: " + result[0].good_with_strangers;
@@ -99,4 +105,8 @@ function renderBreeds(){
 favButtons.on("click", ".button", function(){
   breed = this.textContent;
   getBreed(breed);
+})
+
+modalButton.on("click", function(){
+  errorModal.attr("class", "is-hidden")
 })
