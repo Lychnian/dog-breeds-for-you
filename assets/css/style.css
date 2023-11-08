@@ -52,6 +52,10 @@ header {
     color: white;
 }
 
+.modal-background {
+  background-color: red;
+}
+
 /*
   ID selectors
 */
@@ -80,8 +84,10 @@ header {
 
 #rel {
   position: relative;
+  /* width: 50%; */
 }
 
 #modalButton {
   position: absolute;
+  color: black;
 }
