@@ -38,7 +38,25 @@ Visit the live application. Dog Breeds For You at: https://lychnian.github.io/do
 
 
 ## Screenshots
-[Add screenshots here]
+
+Webpage Desktop View
+![webpage](https://github.com/Lychnian/dog-breeds-for-you/assets/140586279/f5fef9db-36ed-4d0c-8e87-4bed78bca02d)
+
+
+Modal Message on Improper Input
+![ModalMessage](https://github.com/Lychnian/dog-breeds-for-you/assets/140586279/15b92140-6cad-45d5-8397-be5479bfdd1d)
+
+
+Saved Favorites
+![SavedFavorites](https://github.com/Lychnian/dog-breeds-for-you/assets/140586279/25984bc6-6857-4d04-b445-3f173df18ebd)
+
+
+Mobile Device View (Responsive)
+![MobileView](https://github.com/Lychnian/dog-breeds-for-you/assets/140586279/bb7847b2-41c7-4d34-a99e-413510e79d77)
+
+
+JavaScript Code
+![JavaScript](https://github.com/Lychnian/dog-breeds-for-you/assets/140586279/57e312bb-34cc-4e1e-a2ae-aa653421d992)
 
 
 ## Collaborators
