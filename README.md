@@ -61,10 +61,10 @@ JavaScript Code
 
 ## Collaborators
 
-Alphonse Kusluch	https://github.com/Akusluch
-Helen Colon	    	https://github.com/Lychnian	
-Vanessa Trinh		https://github.com/xtourmaline	
-Zion Griffin		https://github.com/griff1nz
+- Alphonse Kusluch	https://github.com/Akusluch
+- Helen Colon	    	https://github.com/Lychnian	
+- Vanessa Trinh		  https://github.com/xtourmaline	
+- Zion Griffin		  https://github.com/griff1nz
 
 
 ## License
